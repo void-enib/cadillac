@@ -8,14 +8,8 @@ public class GunController : MonoBehaviour
     public GameObject bullet;
     public Transform spawnBullet;
     public int munition;
-    public float inaccuracy;
-    public float speed;
-
-    private Vector2 movement;
+    
     private float nextFire;
-    private float randomAngle;
-    private Rigidbody2D rbBullet;
-    private GameObject rb;
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +19,7 @@ public class GunController : MonoBehaviour
 
     void setBullet()
     {
-        randomAngle = Random.Range(-inaccuracy, inaccuracy);
-        movement = new Vector2(randomAngle, speed);
-        Debug.Log("x = " + movement.x);
-        Debug.Log("y = " + movement.y);
-        Rigidbody2D rbBullet = bullet.GetComponent<Rigidbody2D>();
-        GameObject copyBullet = Instantiate(bullet, spawnBullet.position, spawnBullet.rotation);
-        Rigidbody2D rbCopyBullet = GetComponent<Rigidbody2D>();
-        rbCopyBullet.velocity = movement;
-        Debug.Log("rb.velocity = " + rbCopyBullet.velocity);
+        Instantiate(bullet, spawnBullet.position, spawnBullet.rotation);
     }
 
     void Fire()

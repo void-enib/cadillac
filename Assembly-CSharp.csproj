@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DestroyByTrigger.cs" />
     <Compile Include="Assets\Scripts\GunController.cs" />
+    <Compile Include="Assets\Scripts\Mover.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Fouque/Documents/GitHub/cadillac/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

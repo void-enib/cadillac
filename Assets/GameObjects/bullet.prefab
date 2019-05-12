@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2400907471165853151}
   - component: {fileID: 6558384164532011271}
-  - component: {fileID: 8142518528781012507}
+  - component: {fileID: -2306122615594796959}
+  - component: {fileID: 6429756265326727367}
   - component: {fileID: 165439675756914745}
   - component: {fileID: 1644397073556816373}
   m_Layer: 0
@@ -82,7 +83,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8142518528781012507
+--- !u!114 &-2306122615594796959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150048515501976570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb03d7aeb92eab4c8bdb643c423e6f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  inaccuracy: 10
+--- !u!114 &6429756265326727367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,8 +117,8 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4150048515501976570}
-  m_BodyType: 0
-  m_Simulated: 0
+  m_BodyType: 1
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -113,7 +128,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!70 &1644397073556816373
 CapsuleCollider2D:

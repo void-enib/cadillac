@@ -96,9 +96,7 @@ MonoBehaviour:
   fireRate: 0.05
   bullet: {fileID: 4150048515501976570, guid: cbf8e233f75212743a7f11645e64e56f, type: 3}
   spawnBullet: {fileID: 6934701906421324054}
-  munition: 100
-  inaccuracy: 0.05
-  speed: 20
+  munition: 1000
 --- !u!1001 &7292069104788762805
 PrefabInstance:
   m_ObjectHideFlags: 0

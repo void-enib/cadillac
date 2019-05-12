@@ -7,21 +7,18 @@ public class DestroyByTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D()
     {
-        if(other.tag=="zombie")
-        {
-            return;
-        }
+        Debug.Log("collision 2D");
         Destroy(gameObject);
     }
 }
